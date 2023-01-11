@@ -1,5 +1,9 @@
 <template>
+  <div>
+  <Navigation/> 
   <Home/>
+  <Footer/> 
+  </div> 
 </template>
 
 <script>
