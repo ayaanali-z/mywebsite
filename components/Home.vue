@@ -17,7 +17,8 @@
 <div class = "container2"> 
 	<h2> <a href = "https://apod.nasa.gov/apod/astropix.html"> Daily Astronomy </a> </h2>
          <img :src="apod.url" alt="Astronomy Photo"  id = "NASA" > 
-		    <p> </p>
+		    <h3> {{ apod.title }}</h3>
+			<p> {{ apod.explanation }}</p>
 		
 </div> 
 <router-view v-slot="{ index }">
@@ -38,8 +39,9 @@
 }
 .container2 { 
 	font-size: 25px; 
-	font-family: 'EB Garamond', cursive;
+	font-family: 'EB Garamond';
 	color: white;
+	margin: 50px; 
 }
 .typewriter h1 {
 	font-size: 100px; 

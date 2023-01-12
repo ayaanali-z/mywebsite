@@ -2,10 +2,10 @@
     <div id = "AboutMe"> 
         <h1 About me </h1> 
     <center> 
-        <img src = "/LinkedinPhoto.jpeg" alt = "A picture of Ayaan" width = "250" height = "250" id="homepic"/>
-        <p id = "Bio" > I study mathematics and computer science at Columbia University. I'm interested in
-			 artifical intelligence, probability theory, quantitative finance, and higher mathematics. Beyond my career interests
-			 in technology, I'm deeply passionate about journalism and report for Columbia Daily Spectator. </p> 
+        <img src = "LinkedinPhoto.jpeg" alt = "A picture of Ayaan" width = "250" height = "250" id="homepic"/>
+        <h3> Aspiring Full-Stack Developer </h3> 
+        <h3> C.S. & Mathematics @ Columbia University </h3> 
+        <h3> Staff Reporter @ Columbia Daily Spectator </h3> 
     </center> 
      </div> 
 </template> 
