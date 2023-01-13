@@ -1,6 +1,6 @@
 <template> 
     <div id = "AboutMe"> 
-        <h1 About me </h1> 
+        <h1> About me </h1> 
     <center> 
         <img src = "LinkedinPhoto.jpeg" alt = "A picture of Ayaan" width = "250" height = "250" id="homepic"/>
         <h3> Aspiring Full-Stack Developer </h3> 

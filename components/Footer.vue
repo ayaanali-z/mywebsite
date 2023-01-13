@@ -18,7 +18,6 @@
         font-size: 14px;
         justify-content: center;
         align-items: center;
-        /* The rest of the code makes the footer stay at the bottom, feel free to copy it */
         position: fixed;
         bottom: 0;
         width: 100%;
