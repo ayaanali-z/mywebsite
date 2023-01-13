@@ -5,8 +5,12 @@
 <link rel="stylesheet" href="style.css" />
 <div class = "container"> 
 	<div class = "HEADER"> 
-		<h1><span style="color: #e4bb68">System</span><span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span><span style="color: #e4bb68">("</span><div id = "sequence"></div><span style="color: #e4bb68">");</span></h1>
+		<h1>
+			<span style="color: #e4bb68">System</span><span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span><span style="color: #e4bb68">("</span><div style="display: inline-block" v-bind:class="currentClass" v-bind:style="{color: currentColor}" display: inline>{{currentWord}} </div><span style="color: #e4bb68">");</span>
+		</h1>
 </div>
+	<h1 id = "me"> My name is Ayaan. </h1>
+
 </div>
 
 <div class = "links"> 
@@ -16,12 +20,12 @@
 </div> 
 
 <div class = "container2"> 
-	<h2> Daily Astronomy </h2>
+	<!--<h2> Daily Astronomy </h2>
          <img :src="apod.url" alt="Astronomy Photo"  id = "NASA" > 
 		    <h3> {{ apod.title }}</h3>
 			<p> {{ apod.copyright }}</p>
 			<p> {{ apod.date }}</p>
-		
+	-->
 </div> 
 
 </center>
@@ -30,9 +34,10 @@
  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond&family=Fredoka+One&family=JetBrains+Mono:wght@500&display=swap'); 
+
 .container { 
-	display: inline-block; 
-	text-align: center; 
+	color: white; 
+	font-family: 'JetBrains Mono', monospace; 
 }
 .container2 { 
 	font-size: 25px; 
@@ -71,6 +76,12 @@ a:hover, a:visited, a:link, a:active
 #sequence { 
 	display: inline; 
 }
+#me { 
+	font-size: 40px; 
+	font-family: 'JetBrains Mono', monospace;
+	color: white;
+	margin: 50px; 
+}
 div { 
 	background-color: black; 
  }
@@ -106,30 +117,48 @@ body {
 </style>
 
 <script>
+export default {
+  data() {
+    return {
+      example: [
+        { word: "Hello World!", class: "color1" },
+        { word: "Bonjour monde!", class: "color2" },
+        { word: "Hallo Welt!", class: "color3" },
+        { word: "Hola mundo!", class: "color4" },
+        { word: "こんにちは世界!", class: "color5" },
+        { word: "Привет мир!", class: "color6" },
+        { word: "你好世界!", class: "color7" },
+      ],
+      currentIndex: 0,
+    };
+  },
+  computed: {
+    currentWord() {
+      return this.example[this.currentIndex].word;
+    },
+    currentClass() {
+      return this.example[this.currentIndex].class;
+    },
+  },
+  mounted() {
+    this.textSequence();
+  },
+  methods: {
+    textSequence() {
+      setTimeout(() => {
+        this.currentIndex++;
 
-var example = [{'word':'Hello World!', 'class':'color1'},    
-					{'word':'Bonjour monde!', 'class':'color2'},     
-					{'word':'Hallo Welt!', 'class':'color3'},    
-					{'word':'Hola mundo!', 'class':'color4'},    
-					{'word':'こんにちは世界!', 'class':'color5'},     
-					{'word':'Привет мир!', 'class':'color6'},    
-					{'word':'你好世界!', 'class':'color7'}];
+        if (this.currentIndex === this.example.length) {
+          this.currentIndex = 0;
+        }
 
-textSequence(0);
-function textSequence(i) {
+        this.textSequence();
+      }, 1000);
+    },
+  },
+};
 
-	if (example.length > i) {
-		setTimeout(function() {
-			document.getElementById("sequence").innerHTML = example[i].word;
-			document.getElementById("sequence").setAttribute("class", example[i].class);
-			textSequence(++i);
-		}, 1000); // 1 second (in milliseconds)
-
-	} else if (example.length == i) { // Loop
-		textSequence(0);
-	}
-
-}
+/*
 export default {
    data() {
      return {
@@ -142,5 +171,6 @@ export default {
      ).then(res => res.json())
    }
  }
-
+ */ 
 </script>
+
