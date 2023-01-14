@@ -48,7 +48,7 @@
 	color: white; 
 	font-family: 'JetBrains Mono', monospace; 
 }
-.container2 { 
+.container2 {  
 	font-size: 25px; 
 	font-family: 'JetBrains Mono', monospace;
 	color: white;
@@ -90,6 +90,14 @@ a:hover, a:visited, a:link, a:active
         margin: 0 auto;
     }
 }
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 #sequence { 
 	display: inline; 
