@@ -2,7 +2,7 @@
     <div id = "AboutMe"> 
     <center> 
         <h1> About me </h1> 
-        <img src = "/LinkedinPhoto.jpeg" alt = "A picture of Ayaan" width = "250" height = "250" id="homepic"/>
+        <img src = "LinkedinPhoto.jpeg" alt = "A picture of Ayaan" width = "250" height = "250" id="homepic"/>
 
         <p id = "bio"> Hi! I'm an aspiring developer from Queens, NYC currently studying computer science and mathematics @ Columbia University. 
             I'm progressively proficient in Java, Python, HTML5/CSS/Javascript, specifically the Vue and Nuxt JS frameworks. I'm also 
