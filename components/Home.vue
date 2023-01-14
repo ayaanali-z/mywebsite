@@ -26,13 +26,16 @@
 
 <div class = "container2"> 
 	<h2> <span>Astronomy Picture of the Day</span></h2>
-         <img :src="apod.url" alt="Astronomy Photo"  id = "NASA" > 
+
+         <img :src="apod.url" alt="Astronomy Photo"  id = "NASA" >
 		    <h3> {{ apod.title }}</h3>
 			<p> {{ apod.copyright }}</p>
 			<p> {{ apod.date }}</p>
-	
+		
 </div> 
-
+	<div class = "credits">
+		<p> Built by Ayaan Ali </p>
+	</div>
 </center>
 </div>  
 </template> 
@@ -54,6 +57,7 @@
 .HEADER h1 {
 	font-size: 50px; 
 	font-family: 'JetBrains Mono', monospace;
+	word-wrap: break-word; 
 }
 
 .string {
@@ -79,6 +83,14 @@ a:hover, a:visited, a:link, a:active
 	width: 500px; 
 	height: auto; 
 }
+
+@media (max-width: 600px) {
+    #NASA {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 #sequence { 
 	display: inline; 
 }
@@ -87,6 +99,11 @@ a:hover, a:visited, a:link, a:active
 	font-family: 'JetBrains Mono', monospace;
 	color: white;
 	margin: 50px; 
+}
+.credits { 
+	font-size: 20px; 
+	font-family: 'JetBrains Mono', monospace; 
+	color: white; 
 }
 
 div { 

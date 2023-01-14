@@ -16,7 +16,6 @@
 
         <p> <span style = "color: lightgreen"> Spring 2023: </span> Data Structures & Algorithms (<span style = "color: #b5651d">Java</span>), Accelerated Multivariable Calculus (III-IV), Linear Algebra, Literature Humanities II, and University Writing: Contemporary Essays. </p>
         <p> <span style = "color: #C4A484"> Fall 2022: </span> Introduction to Computer Science and Programming (<span style = "color: #b5651d">Java</span>), Calculus II, Calculus-Based Introduction to Statistics, Literature Humanities I, and Frontiers of Science. </p>
-        <p> <span style = "color: lightseagreen"> 2021-22:</span> AP Calculus AB, AP Computer Science Principles (<span style = "color: green">Python</span>).</p>
 
         <p> Please feel free to follow me on any platforms and message me for any inquiry. </p>
         
