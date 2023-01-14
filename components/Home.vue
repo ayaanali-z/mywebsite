@@ -34,7 +34,8 @@
 		
 </div> 
 	<div class = "credits">
-		<p> Built by Ayaan Ali </p>
+		<p> Built in Nuxt.js by Ayaan Ali</p>
+
 	</div>
 </center>
 </div>  
@@ -82,20 +83,8 @@ a:hover, a:visited, a:link, a:active
 #NASA { 
 	width: 500px; 
 	height: auto; 
-}
-
-@media (max-width: 600px) {
-    #NASA {
-        display: block;
-        margin: 0 auto;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+	margin-left: auto; 
+	margin-right: auto; 
 }
 
 
