@@ -1,8 +1,8 @@
 <template>
-
 <div>
 <center>
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css">
+
 <div class = "container"> 
 	<div class = "HEADER"> 
 		<h1>
@@ -13,19 +13,24 @@
 
 </div>
 
-<div class = "links"> 
+<div class = "links" style = "color: white"> 
 	<h2 id = "aboutme"> <NuxtLink to= "about"> About Me </NuxtLink> </h2>
 	<h2> <a href = "https://drive.google.com/file/d/1NKvvGXsVPl-6mN4HticsgsRLneTVQ-tS/view?usp=sharing"> Resume </a> </h2>
 	<h2> <a href = "mailto: aa4688@columbia.edu">Email</a></h2>
+	
 </div> 
 
+	<div class = "socials"> 
+
+	</div>
+
 <div class = "container2"> 
-	<!--<h2> Daily Astronomy </h2>
+	<h2> <span>Astronomy Picture of the Day</span></h2>
          <img :src="apod.url" alt="Astronomy Photo"  id = "NASA" > 
 		    <h3> {{ apod.title }}</h3>
 			<p> {{ apod.copyright }}</p>
 			<p> {{ apod.date }}</p>
-	-->
+	
 </div> 
 
 </center>
@@ -34,6 +39,7 @@
  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond&family=Fredoka+One&family=JetBrains+Mono:wght@500&display=swap'); 
+
 
 .container { 
 	color: white; 
@@ -82,12 +88,25 @@ a:hover, a:visited, a:link, a:active
 	color: white;
 	margin: 50px; 
 }
+
 div { 
 	background-color: black; 
  }
 body { 
 	background-color: black;
+	margin-bottom: 100px; 
+	animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+@keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
 
 .color1 {
   color: #fa8231;
@@ -114,9 +133,16 @@ body {
   color: purple;
 }
 
+.slide-enter-active, .slide-leave-active {
+  transition: all .5s;
+}
+.slide-enter, .slide-leave-to {
+  transform: translateX(-100%);
+}
 </style>
 
 <script>
+
 export default {
   data() {
     return {
@@ -130,6 +156,7 @@ export default {
         { word: "你好世界!", class: "color7" },
       ],
       currentIndex: 0,
+      apod: []
     };
   },
   computed: {
@@ -139,9 +166,13 @@ export default {
     currentClass() {
       return this.example[this.currentIndex].class;
     },
+	currentColor() {
+      return this.example[this.currentIndex].color;
+    }
   },
   mounted() {
     this.textSequence();
+    this.fetchAPOD();
   },
   methods: {
     textSequence() {
@@ -155,22 +186,13 @@ export default {
         this.textSequence();
       }, 1000);
     },
+    async fetchAPOD() {
+      this.apod = await fetch(
+        'https://api.nasa.gov/planetary/apod?api_key=w0vDPcwgC3slJiZ9wAHQyJ6oD0ZAf6AXg24FqrTe'
+      ).then(res => res.json())
+    }
   },
 };
 
-/*
-export default {
-   data() {
-     return {
-       apod: []
-     }
-   },
-   async fetch() {
-     this.apod = await fetch(
-       'https://api.nasa.gov/planetary/apod?api_key=w0vDPcwgC3slJiZ9wAHQyJ6oD0ZAf6AXg24FqrTe'
-     ).then(res => res.json())
-   }
- }
- */ 
 </script>
 
