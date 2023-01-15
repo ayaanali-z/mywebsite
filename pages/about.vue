@@ -40,10 +40,19 @@ div {
     margin-left: 50px; 
     margin-right: 50px; 
     color: white; 
+    text-align: center; 
 }
 #bio { 
     font-family: 'JetBrains Mono', monospace; 
     color: white; 
+}
+
+
+@media only screen and (max-width: 600px) {
+  #homepic {
+    width: 100%; 
+    text-align:center;
+  }
 }
 
 a:hover, a:visited, a:link, a:active
