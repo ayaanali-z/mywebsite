@@ -29,8 +29,8 @@
 
          <img :src="apod.url" alt="Astronomy Photo"  id = "NASA" >
 		    <h3> {{ apod.title }}</h3>
-			<p> {{ apod.copyright }}</p>
 			<p> {{ apod.date }}</p>
+			<p> {{ apod.copyright }}</p>
 		
 </div> 
 	<div class = "credits">
@@ -54,6 +54,10 @@
 	font-family: 'JetBrains Mono', monospace;
 	color: white;
 	margin: 50px; 
+	display: flex;
+	flex-direction: column; 
+  	justify-content: center;
+  	align-items: center;
 }
 .HEADER h1 {
 	font-size: 50px; 
@@ -85,6 +89,7 @@ a:hover, a:visited, a:link, a:active
 	height: auto; 
 	margin-left: auto; 
 	margin-right: auto; 
+
 }
 
 
