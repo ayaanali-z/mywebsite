@@ -25,7 +25,7 @@
 	</div>
 
 <div class = "container2"> 
-	<h2> <span>Astronomy Picture of the Day</span></h2>
+	<h2> <span>Daily Astronomy</span></h2>
 
          <img :src="apod.url" alt="Astronomy Photo"  id = "NASA" >
 		    <h3> {{ apod.title }}</h3>
