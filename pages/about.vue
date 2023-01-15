@@ -42,7 +42,10 @@ div {
     margin-left: 50px; 
     margin-right: 50px; 
     color: white; 
-    text-align: center; 
+    display: flex;
+	flex-direction: column; 
+  	justify-content: center;
+  	align-items: center;
 }
 #bio { 
     font-family: 'JetBrains Mono', monospace; 
@@ -52,12 +55,10 @@ div {
     text-align: center; 
 }
 
-
-@media only screen and (max-width: 600px) {
   #homepic {
     text-align:center;
+    margin: 0 auto; 
   }
-}
 
 a:hover, a:visited, a:link, a:active
 {
