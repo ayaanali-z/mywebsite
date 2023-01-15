@@ -12,7 +12,7 @@
             full list of my coverage can be found <a href = "https://www.columbiaspectator.com/contributors/Ayaan-Ali/"> <b> here.</b></a> 
         </p>
 
-        <p>Any tips can be sent to <a href = "mailto: ayaan.ali@columbiaspectator.com"> ayaan.ali@columbiaspectator.com</a>.</p>
+        <p id = "tips">Any tips can be sent to <a href = "mailto: ayaan.ali@columbiaspectator.com"> ayaan.ali@columbiaspectator.com</a>.</p>
 
         <p>
             Technical skills: <span style= "color: #994C00">Java</span>, <span style = "color: lightgreen">Python</span>, <span style = "color: lightcoral">HTML5/CSS/Javascript</span>, 
@@ -32,6 +32,7 @@ div {
     background-color: black;
 }
 #AboutMe { 
+    background-color: black; 
     color: white; 
     font-family: 'JetBrains Mono', monospace; 
     padding-top: 25px;
@@ -47,10 +48,13 @@ div {
     font-family: 'JetBrains Mono', monospace; 
     color: white; 
 }
+#tips { 
+    text-align: center; 
+}
 
 
 @media only screen and (max-width: 600px) {
-  #AboutMe {
+  #homepic {
     text-align:center;
   }
 }
