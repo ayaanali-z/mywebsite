@@ -85,13 +85,19 @@ a:hover, a:visited, a:link, a:active
 }
 
 #NASA { 
-	width: 500px; 
+	width: 50%; 
 	height: auto; 
 	margin-left: auto; 
 	margin-right: auto; 
 
 }
 
+@media only screen and (max-width: 600px) {
+  #NASA {
+    width: 100%;
+    text-align:center;
+  }
+}
 
 #sequence { 
 	display: inline; 
