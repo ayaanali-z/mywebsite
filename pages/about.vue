@@ -4,18 +4,20 @@
         <h1> About me </h1> 
         <img src = "LinkedinPhoto.png" alt = "A picture of Ayaan" width = "250" height = "250" id="homepic"/>
 
-        <p id = "bio"> Hi! I'm an aspiring developer from Queens, NYC currently studying computer science and mathematics @ Columbia University. Academically, I'm interested in mathematical finance, probability theory, AI/ML, and 
-            backend engineering.
+        <p id = "bio"> Hi! I'm an aspiring developer from <span style = "color: #8142f5">Queens, NYC</span> currently studying computer science and mathematics @ <span style = "color: #2B4593">Columbia University</span>. 
+            Academically, I'm interested in mathematical finance, probability theory, AI/ML, and backend engineering.
         </p> 
 
         <p id = "passion"> Outside of school, I'm deeply passionate about journalism. I'm a staff reporter in University News for Columbia Daily Spectator. A 
             full list of my coverage can be found <a href = "https://www.columbiaspectator.com/contributors/Ayaan-Ali/"> <b> here.</b></a> 
         </p>
 
-        <p>Any tips can be sent to <a href = "mailto: ayaan.ali@columbiaspectator.com"> ayaan.ali@columbiaspectator.com</a></p>
+        <p>Any tips can be sent to <a href = "mailto: ayaan.ali@columbiaspectator.com"> ayaan.ali@columbiaspectator.com</a>.</p>
 
         <p>
-            Technical skills: <span style= "color: #994C00">Java</span>, <span style = "color: lightgreen">Python</span>, <span style = "color: lightcoral">HTML5/CSS/Javascript</span>, Nuxt.js, Vue.js, and LaTeX. 
+            Technical skills: <span style= "color: #994C00">Java</span>, <span style = "color: lightgreen">Python</span>, <span style = "color: lightcoral">HTML5/CSS/Javascript</span>, 
+            <span style = "color: darkgreen">Nuxt</span>.<span style = "color: lightseagreen">js</span>, <span style = "color: lightseagreen">Vue</span>.<span style = "color: darkgreen">js</span>, and 
+            <span style = "color: darkcyan">LaTeX</span>. 
         </p>
 
         <p> Please feel free to follow me on any platforms and message me for any inquiry. I'm most active on <a href = https://www.linkedin.com/in/ayaan-ali-089848208>Linkedin.</a></p>
@@ -30,7 +32,6 @@ div {
     background-color: black;
 }
 #AboutMe { 
-    background-color: black; 
     color: white; 
     font-family: 'JetBrains Mono', monospace; 
     padding-top: 25px;
@@ -49,8 +50,7 @@ div {
 
 
 @media only screen and (max-width: 600px) {
-  #homepic {
-    width: 100%; 
+  #AboutMe {
     text-align:center;
   }
 }
