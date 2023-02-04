@@ -15,7 +15,7 @@
 
 <div class = "links" style = "color: white"> 
 	<h2 id = "aboutme"> <NuxtLink to= "about"> About Me </NuxtLink> </h2>
-	<h2> <a href = "https://drive.google.com/file/d/18A-Izkny7ibrFa2DuDXg_-F_CF3RNbpq/view?usp=sharing"> Resume </a> </h2>
+	<h2> <a href = "https://drive.google.com/file/d/1OqgnMDWreyHn3U4zzs4Wfh--0hGG7Qez/view?usp=sharing"> Resume </a> </h2>
 	<h2> <a href = "mailto: aa4688@columbia.edu">Email</a></h2>
 	
 </div> 
