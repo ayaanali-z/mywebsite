@@ -1,28 +1,33 @@
 <template> 
     <div id = "AboutMe"> 
-    <center> 
+  
         <h1> About me </h1> 
-        <img src = "LinkedinPhoto.png" alt = "A picture of Ayaan" width = "250" height = "250" id="homepic"/>
 
-        <p id = "bio"> Hi! I'm an aspiring developer from <span style = "color: #8142f5">Queens, NYC</span> currently studying computer science and mathematics @ <span style = "color: #2B4593">Columbia University</span>. 
-            Academically, I'm interested in mathematical finance, probability theory, AI/ML, and backend engineering.
-        </p> 
-
-        <p id = "passion"> Outside of school, I'm deeply passionate about journalism. I'm a staff reporter in University News for Columbia Daily Spectator. A 
-            full list of my coverage can be found <a href = "https://www.columbiaspectator.com/contributors/Ayaan-Ali/"> <b> here.</b></a> 
+        <p id = "bio"> Some key points: 
+            <ul>
+                <li>I'm from <span style = "color: #8142f5">NYC</span>.</li>
+                <li>I study computer science + mathematics @ <span style = "color: #2B4593">Columbia University</span>.</li>
+                    <ul>
+                        <li>My most proficient language is <span style = "color: chocolate">Java</span>.</li>
+                    </ul>
+                <li> On the internet, I often go by <mark>ayaandotcom</mark>.</li>
+                <li> I like pulling data from random APIs on my sites. </li>
+                <li> I'm a staff reporter in University News for Columbia Daily Spectator. </li>
+                    <ul> 
+                       <li>A full list of my coverage can be found <a href = "https://www.columbiaspectator.com/contributors/Ayaan-Ali/"> <b> here.</b></a></li> 
+                    </ul>
+                <li> I like doing the NYT Crossword and sudoku.</li>
+            </ul>
+                    Professional interests: 
+                <ul> 
+                    <li> Backend SWE, quantitative finance, AI/ML, and mathematical modeling.</li>
+                    <li> My experience and technical skills can be found on my 
+                        <a href = "https://drive.google.com/file/d/1BTnWIeztgcPq6ZX9_UeliO_2LvXBFY4z/view?usp=sharing">resume</a>.</li>
+                    <li> I'm actively seeking new opportunities. Please feel free to reach out on <a href = 
+                        "https://www.linkedin.com/in/ayaan-ali-089848208/">Linkedin</a>.</li>
+                </ul>
         </p>
 
-        <p id = "tips">Any tips can be sent to <a href = "mailto: ayaan.ali@columbiaspectator.com"> ayaan.ali@columbiaspectator.com</a>.</p>
-
-        <p>
-            Technical skills: <span style= "color: #994C00">Java</span>, <span style = "color: lightgreen">Python</span>, <span style = "color: lightcoral">HTML5/CSS/Javascript</span>, 
-            <span style = "color: darkgreen">Nuxt</span>.<span style = "color: lightseagreen">js</span>, <span style = "color: lightseagreen">Vue</span>.<span style = "color: darkgreen">js</span>, and 
-            <span style = "color: darkcyan">LaTeX</span>. 
-        </p>
-
-        <p> Please feel free to follow me on any platforms and message me for any inquiry. I'm most active on <a href = https://www.linkedin.com/in/ayaan-ali-089848208>Linkedin.</a></p>
-        
-    </center> 
      </div> 
 </template> 
 <style> 
@@ -30,6 +35,12 @@
 
 div { 
     background-color: black;
+}
+mark{
+ background-color:#c2c2c2;
+}
+li {
+  margin-bottom: 10px; 
 }
 #AboutMe { 
     background-color: black; 

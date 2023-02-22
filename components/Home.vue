@@ -15,7 +15,7 @@
 
 <div class = "links" style = "color: white"> 
 	<h2 id = "aboutme"> <NuxtLink to= "about"> About Me </NuxtLink> </h2>
-	<h2> <a href = "https://drive.google.com/file/d/1OqgnMDWreyHn3U4zzs4Wfh--0hGG7Qez/view?usp=sharing"> Resume </a> </h2>
+	<h2> <a href = "https://drive.google.com/file/d/1BTnWIeztgcPq6ZX9_UeliO_2LvXBFY4z/view?usp=sharing"> Resume </a> </h2>
 	<h2> <a href = "mailto: aa4688@columbia.edu">Email</a></h2>
 	
 </div> 
@@ -34,7 +34,7 @@
 		
 </div> 
 	<div class = "credits">
-		<p> Developed in <span style = "color: darkgreen">Nuxt</span>.<span style = "color: lightseagreen">js</span> by Ayaan Ali</p>
+		<p> Developed in <span style = "color: darkgreen">Vue</span>.<span style = "color: lightseagreen">js</span> by Ayaan Ali</p>
 
 	</div>
 </center>
@@ -109,7 +109,7 @@ a:hover, a:visited, a:link, a:active
 	margin: 50px; 
 }
 .credits { 
-	font-size: 20px; 
+	font-size: 17.5px; 
 	font-family: 'JetBrains Mono', monospace; 
 	color: white; 
 }
