@@ -59,6 +59,7 @@ li {
   	align-items: center;
 }
 #bio { 
+    font-size: 20px; 
     font-family: 'JetBrains Mono', monospace; 
     color: white; 
 }
